@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    background: #260508;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(0,0,0,0.5)), url(https://p4.wallpaperbetter.com/wallpaper/92/508/984/mars-4k-astronaut-alone-wallpaper-preview.jpg);
+    /*url();*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-content-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #CECECE;
+    text-align: center;
+    padding: 0 10rem 0 10rem;
+    margin: 1rem 0;
+    font-weight: lighter;
+}
+/*centrar imagen*/
