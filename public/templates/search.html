@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        {% include 'header.html' %}
+    </head>
+    <body>
+        <header>
+            {% include 'navbarmain.html' %}
+        </header>
+        <main>
+            <div class="container-search-item">
+                {% if actor %}
+                    {% include 'actor.html' %}
+                {% elif character %}
+                    {% include 'personaje.html' %}
+                {% else %}
+                    <h2>Oops! Please try again.</h2>
+                {% endif %}
+            </div>
+        </main>
+        <footer>
+            {% include 'footer.html' %}
+        </footer>
+    </body>
+</html>

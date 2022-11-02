@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        {% include 'header.html' %}
+    </head>
+    <body>
+        <header>
+            {% include 'navbar.html' %}
+        </header>
+        <main>
+            <h1><strong>¡Bienvenido a la página de inicio!</strong></h1>
+            <form method="POST" action="/upload" enctype="multipart/form-data" target="request">
+                <input type="file" name="image" accept="image/*">
+                <button type="submit">Enviar</button>
+            </form>
+            <iframe id="request"></iframe>
+            <div id="response"></div>
+            <div class="UPimagenes">
+                <div class="UPimagenes-grid">
+                    <div class="image-prompt-overlay-container">
+                        <img width="1024" height="1024" alt=""  src="">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- hacer botor para subir archivos en html y llamar el endpoint de main.py-->
+            <!-- mostrar las imagenes que se subieron de la carpeta images con ruta /static/images -->
+        </main>
+        <footer>
+            {% include 'footer.html' %}
+        </footer>
+    </body>
+</html>
