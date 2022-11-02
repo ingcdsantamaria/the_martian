@@ -17,7 +17,7 @@ desarrolladores={
         'picture': '../images/desarrollador_danielV.png',
         'age': 20,
         'profession': 'Ingeriero marciano de aliens sistematicos y computos galacticos',
-        'descripstion': 'Actual estudiante de Ingenieria marciana de aliens sistematicos y computos de la Universidad galactica catolica de Colombia dedicado a estudiar las estrellas y sus funciones en los marcianos',
+        'descripstion': 'Estudiante de Ingenieria marciana de aliens sistematicos y computos de la Universidad galactica catolica de Colombia dedicado a estudiar las estrellas y sus funciones en los marcianos',
         'email': 'djvalderrama67@ucatolica.edu.co',
         'gitlab': 'https://gitlab.com/djvalderrama67',
         'phone': 3204341780,
