@@ -52,4 +52,26 @@ body{
     margin: 1rem 0;
     font-weight: lighter;
 }
-/*centrar imagen*/
+/*-----------------centrar imagen-----------------------*/
+
+.main-content-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.main-content img{
+    width: 100%;
+    height: 100%;
+    border: 5px solid #fff;
+}
+
+.main-content-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 1rem 0;
+}
+/*-------------desarrolladores--------------------------*/
