@@ -56,7 +56,10 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 # Home
 @app.get("/",response_class=HTMLResponse)
 def root(request: Request):
@@ -70,10 +73,16 @@ def get_all_desarrolladores(request: Request, number: Optional[str] = Query(defa
         response.append((id,desarrollador))
     return templates.TemplateResponse("./views/about.html", {"request": request, "desarrolladores": response})
 
+<<<<<<< HEAD
 
 #list all actores
 @app.get(path="/actor",response_class=HTMLResponse, status_code=status.HTTP_200_OK)
 def get_all_actores(request: Request, number: Optional[str] = Query(default="10", max_length=3)):
+=======
+#list all actores
+@app.get(path="/actor",response_class=HTMLResponse, status_code=status.HTTP_200_OK)
+def get_all_actores(request: Request, number: Optional[str] = Query(default="5", max_length=3)):
+>>>>>>> master
     response = []
     for id, actor in list(actores.items())[:int(number)]:
         response.append((id,actor))
@@ -94,7 +103,11 @@ def get_actor_by_id(request: Request, id: int = Path(..., gt=0)):
 
 #list all characters
 @app.get(path="/character",response_class=HTMLResponse, status_code=status.HTTP_200_OK)
+<<<<<<< HEAD
 def get_all_characters(request: Request, number: Optional[str] = Query(default="10", max_length=3)):
+=======
+def get_all_characters(request: Request, number: Optional[str] = Query(default="5", max_length=3)):
+>>>>>>> master
     response = []
     for id, character in list(characters.items())[:int(number)]:
         response.append((id,character))
@@ -125,6 +138,7 @@ def search_actor_or_character(request: Request,id: str = Form(...), path: str =P
 
 
 
+<<<<<<< HEAD
 def directory_is_ready():
     os.makedirs(os.getcwd()+"/static/images", exist_ok=True)
     print(os.getcwd())
@@ -169,3 +183,43 @@ def show_Upload(request: Request):
                                       {"request": request,
                                        "title": "Equipo desarrollador"
                                        })
+=======
+#Ver imagen
+@app.get(
+    path="/static/images/{file_name}",
+    status_code=status.HTTP_202_ACCEPTED
+)
+def show_image(
+        file_name:str=Path(...)
+):
+    dir=directory_is_ready()
+    path=dir+file_name
+    return FileResponse(path)
+
+
+
+#ver Manejo de archivos o type
+@app.post(path="/post/image",status_code=status.HTTP_202_ACCEPTED)
+def post_image(
+        image:UploadFile=File(...)
+):
+    return { "Nombre del Archivo": image.filename,
+        "Formato": image.content_type,
+        "Tamaño": len(image.file.read())
+    }
+
+# upload image
+@app.post("/upload", status_code=status.HTTP_201_CREATED)
+#async
+async def upload_image(file: UploadFile = File(...)):
+    with open(f"static/images/{file.filename}", "wb") as mypicture:
+        content = await file.read()
+        mypicture.write(content)
+        mypicture.close()
+    return "Image saved successfully"
+
+def directory_is_ready():
+    os.makedirs(os.getcwd() + "/img", exist_ok=True)
+    print(os.getcwd())
+    return os.getcwd() + "/img"
+>>>>>>> master
