@@ -2,3 +2,224 @@
     margin: 0;
     padding: 0;
 }
+
+#navbar{
+    background: #260508;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(0,0,0,0.5)), url(https://p4.wallpaperbetter.com/wallpaper/92/508/984/mars-4k-astronaut-alone-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-content-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #CECECE;
+    text-align: center;
+    padding: 0 10rem 0 10rem;
+    margin: 1rem 0;
+    font-weight: lighter;
+}
+/*centrar imagen*/
+.main-content-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.main-content img{
+    width: 100%;
+    height: 100%;
+    border: 5px solid #fff;
+}
+
+.main-content-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 1rem 0;
+}
+/*-------------desarrolladores---------------------------------------------------------*/
+.contenedor-item{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    border: #F2D6B3 1px solid;
+    color: #F2D6B3;
+}
+
+.container-fluid-box{
+    margin: 5rem 0;
+}
+
+.contenedor-item a{
+    color: #F2D6B3;
+    text-decoration: none;
+}
+.contenedor-item p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #F2D6B3;
+    text-align: center;
+    padding: 0 10rem 0 10rem;
+    margin: 1rem 0;
+}
+
+.contenedor-item img{
+    width: 50%;
+    height: 50%;
+    border-radius: 1px;
+    border: 5px solid #F2D6B3;
+}
+
+.container-search-item{
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: #260508;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23F29979' stroke-width='1.7'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23F2D6B3'%3E%3Ccircle cx='769' cy='229' r='9'/%3E%3Ccircle cx='539' cy='269' r='9'/%3E%3Ccircle cx='603' cy='493' r='9'/%3E%3Ccircle cx='731' cy='737' r='9'/%3E%3Ccircle cx='520' cy='660' r='9'/%3E%3Ccircle cx='309' cy='538' r='9'/%3E%3Ccircle cx='295' cy='764' r='9'/%3E%3Ccircle cx='40' cy='599' r='9'/%3E%3Ccircle cx='102' cy='382' r='9'/%3E%3Ccircle cx='127' cy='80' r='9'/%3E%3Ccircle cx='370' cy='105' r='9'/%3E%3Ccircle cx='578' cy='42' r='9'/%3E%3Ccircle cx='237' cy='261' r='9'/%3E%3Ccircle cx='390' cy='382' r='9'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.container-footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.container-footer ul li{
+    margin: 0 1rem;
+}
+
+.container-footer ul li a{
+    color: #F2D6B3;
+    text-decoration: none;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
+    text-align: center;
+}
+
+.content-images{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.content-images h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F2D6B3;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.content-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.form-input-file{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    background: #260508;
+    opacity: 0.8;
+    border-radius: 10px;
+    color: #F2D6B3;
+}
+
+.form-boton{
+    padding: 4px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    background: #FDD6AA;
+    opacity: 0.6;
+    color: #443B30;
+}
+
+.UPimagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.image-prompt-overlay-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.image-prompt-overlay-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1px;
+    border: 5px solid #F2D6B3;
+}
