@@ -56,7 +56,6 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-
 # Home
 @app.get("/",response_class=HTMLResponse)
 def root(request: Request):
@@ -69,7 +68,6 @@ def get_all_desarrolladores(request: Request, number: Optional[str] = Query(defa
     for id, desarrollador in list(desarrolladores.items())[:int(number)]:
         response.append((id,desarrollador))
     return templates.TemplateResponse("./views/about.html", {"request": request, "desarrolladores": response})
-
 
 #list all actores
 @app.get(path="/actor",response_class=HTMLResponse, status_code=status.HTTP_200_OK)
