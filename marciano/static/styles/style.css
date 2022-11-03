@@ -17,10 +17,6 @@
 body{
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(rgba(5,7,12,0.75),rgba(0,0,0,0.5)), url(https://p4.wallpaperbetter.com/wallpaper/92/508/984/mars-4k-astronaut-alone-wallpaper-preview.jpg);
-<<<<<<< HEAD
-=======
-    /*url();*/
->>>>>>> master
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,12 +51,7 @@ body{
     margin: 1rem 0;
     font-weight: lighter;
 }
-<<<<<<< HEAD
 /*centrar imagen*/
-=======
-/*-----------------centrar imagen-----------------------*/
-
->>>>>>> master
 .main-content-img{
     display: flex;
     justify-content: center;
@@ -81,12 +72,7 @@ body{
     text-align: center;
     margin: 1rem 0;
 }
-<<<<<<< HEAD
 /*-------------desarrolladores---------------------------------------------------------*/
-=======
-/*-------------desarrolladores--------------------------*/
-
->>>>>>> master
 .contenedor-item{
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -103,11 +89,7 @@ body{
 }
 
 .contenedor-item a{
-<<<<<<< HEAD
     color: #F2D6B3;
-=======
-    color: #f2d6b4;
->>>>>>> master
     text-decoration: none;
 }
 .contenedor-item p{
@@ -170,7 +152,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-size: 13px;
     margin:20px;
     text-align: center;
-<<<<<<< HEAD
 }
 
 .content-images{
@@ -241,6 +222,4 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     height: 100%;
     border-radius: 1px;
     border: 5px solid #F2D6B3;
-=======
->>>>>>> master
 }
