@@ -1,4 +1,26 @@
-{% include 'header.html' %}
-{% include 'navbar.html' %}
-<h2>hola</h2>
-{% include 'footer.html' %}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        {% include 'header.html' %}
+    </head>
+    <body>
+        <header>
+            {% include 'navbarmain.html' %}
+        </header>
+        <main>
+            <div class="container-fluid-box">
+                {% for id, actor in actores %}
+                    <div class="row justify-content-center">
+                        <div class="col col-sm-6" >
+                            {% include 'actor.html' %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </main>
+        <footer>
+            {% include 'footer.html' %}
+        </footer>
+    </body>
+</html>
