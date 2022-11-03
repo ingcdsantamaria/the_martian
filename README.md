@@ -66,7 +66,6 @@ unless you want to contribute back to the upstream project.
 [userpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#user-or-group-pages
 [projpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#project-pages
 
-
 ## LEVANTAMIENTO DE INFORMACIÓN
 
 	PERSONAJE	ACTOR	PROFESIÓN	DIAS EN MARTE	ASIGNADOS
@@ -131,7 +130,7 @@ movies	"1988 Mystic Pizza
                 Happy Feet 2 
                 We Bought a Zoo 
 2012 Tierra prometida 
-2013 Elysium.
+2013 Elysium 
 2014 The Monuments Men 
                  Interstellar 
 2015 The Martian 
@@ -329,7 +328,7 @@ Terkel in Trouble (2005)
 Lønsj (2008)
 Max Manus: Man of War (2008)
 A Somewhat Gentle Man (2010)
-Headhunters (2011) 
+Headhunters (2011) .
 Age of Heroes (2011)
 90 Minutes (2012)
 Pionér (2013)11​
